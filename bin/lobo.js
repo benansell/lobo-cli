@@ -5,7 +5,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const path = require('path');
 
-var lobo = path.join(process.cwd(), 'node_modules', '.bin', 'lobo');
+var lobo = path.join(process.cwd(), 'node_modules', 'lobo', 'bin', 'lobo.js');
 
 var errorStyle = chalk.red;
 
