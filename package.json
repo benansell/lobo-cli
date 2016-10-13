@@ -1,0 +1,35 @@
+{
+  "name": "lobo-cli",
+  "version": "0.0.1",
+  "description": "Elm test runner cli",
+  "keywords": [
+    "cli",
+    "elm",
+    "lobo",
+    "test"
+  ],
+  "bin": {
+    "lobo": "./bin/lobo.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "author": "bja <code@benansell.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benansell/lobo-cli.git"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-google": "^0.6.0",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "scripts": {
+    "test-lint": "eslint bin/",
+    "test": "npm run test-lint --silent"
+  }
+}
