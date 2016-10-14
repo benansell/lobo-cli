@@ -1,0 +1,18 @@
+language: node_js
+
+os:
+  - linux
+
+env:
+  matrix:
+    - TARGET_NODE_VERSION=node
+
+install:
+  - nvm install $TARGET_NODE_VERSION
+  - nvm use $TARGET_NODE_VERSION
+  - node --version
+  - npm --version
+  - npm install
+
+script:
+  - npm test
